@@ -4,7 +4,8 @@ import string, random, qrcode, io, base64
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:1029%40AZby@localhost/shortener'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:UjnjWTuPeySqeMuTAixZpbswxbJHDqkU@shinkansen.proxy.rlwy.net:42679/railway'
+
 db = SQLAlchemy(app)
 
 class URL(db.Model):
