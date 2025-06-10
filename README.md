@@ -34,55 +34,12 @@ A simple Flask-based application that shortens long URLs and generates QR codes 
 ```bash
 git clone https://github.com/saitejayaruva/urlshortenerqrgenerator.git
 cd urlshortenerqrgenerator
-2. Create & Activate Virtual Environment
-bash
-Copy
-Edit
-python -m venv venv
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
-3. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4. Configure Database
-Update your database URI in app.py:
+---
 
-python
-Copy
-Edit
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://username:password@host:port/dbname'
-Or use .env file with python-dotenv.
 
-5. Run the App
-bash
-Copy
-Edit
-python app.py
-# Or with Gunicorn for production
-gunicorn app:app
-🖼️ Screenshot
-
-🌐 Deployment Tips
-On Render/Railway, configure:
-
-gunicorn as the start command
-
-Environment variable for database URI
-
-Make sure your MySQL DB is accessible externally.
 
 📬 Contact
 Built with ❤️ by Saiteja Yaruva
 
-📄 License
-MIT License
 
-yaml
-Copy
-Edit
 
----
